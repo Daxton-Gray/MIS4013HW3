@@ -26,15 +26,19 @@
               </li>
               
               <li class="nav-item">
-                <a class="nav-link" href="instructors.php">Instructors</a>
+                <a class="nav-link" href="teams.php">Teams</a>
               </li>
               
               <li class="nav-item">
-                <a class="nav-link" href="courses.php">Courses</a>
+                <a class="nav-link" href="courses.php">Locations</a>
               </li>
               
               <li class="nav-item">
-                <a class="nav-link" href="instructors-with-courses.php">Instructors with courses</a>
+                <a class="nav-link" href="instructors-with-courses.php">Leagues</a>
+              </li> 
+
+              <li class="nav-item">
+                <a class="nav-link" href="instructors-with-courses.php">Captains</a>
               </li> 
 
             </ul>
