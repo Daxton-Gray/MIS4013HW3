@@ -4,6 +4,7 @@ require_once("util-db.php");
 
 $pageTitle = "Teams";
 include "view-header.php";
-
+$teams = selectTeams();
+include "view-instructors.php";
 include "view-footer.php";
 ?>
