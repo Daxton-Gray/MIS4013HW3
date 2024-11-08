@@ -5,6 +5,6 @@ require_once("model-teams.php");
 $pageTitle = "Teams";
 include "view-header.php";
 $teams = selectTeams();
-include "view-instructors.php";
+include "view-teams.php";
 include "view-footer.php";
 ?>
