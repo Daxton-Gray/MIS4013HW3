@@ -3,7 +3,7 @@
   <table class="table">
     <thead>
       <tr>
-        <th>ID</th>
+        <th>League ID</th>
         <th>League Name</th>
         <th>Abbreviation</th>
         <th>Sport</th>
