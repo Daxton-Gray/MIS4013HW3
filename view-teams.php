@@ -3,7 +3,7 @@
   <table class="table">
     <thead>
       <tr>
-        <th>ID</th>
+        <th>Team ID</th>
         <th>Name</th>
         <th>City</th>
         <th>League</th>
