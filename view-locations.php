@@ -3,7 +3,7 @@
   <table class="table">
     <thead>
       <tr>
-        <th>ID</th>
+        <th>Location ID</th>
         <th>City</th>
         <th>State</th>
         <th>Country</th>
