@@ -4,9 +4,12 @@
     <thead>
       <tr>
         <th>ID</th>
-        <th>League Name</th>
-        <th>Abbreviation</th>
-        <th>Sport</th>
+        <th>Team Name</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Position</th>
+        <th>Seasons on Team</th>
+        <th>All-Star Seasons</th>
       </tr>
     </thead>
     <tbody>
@@ -14,10 +17,13 @@
 while ($star = $stars->fetch_assoc()) {
 ?>
        <tr>
-         <td><?php echo $star['league_id']; ?></td>
-         <td><?php echo $star['league_name']; ?></td>
-         <td><?php echo $star['league_abbreviation']; ?></td>
-         <td><?php echo $star['sport']; ?></td>
+         <td><?php echo $star['allstar_id']; ?></td>
+         <td><?php echo $star['team_id']; ?></td>
+         <td><?php echo $star['f_name']; ?></td>
+         <td><?php echo $star['l_name']; ?></td>
+         <td><?php echo $star['position']; ?></td>
+         <td><?php echo $star['season_with_team']; ?></td>
+         <td><?php echo $star['allstar_seasons']; ?></td>
        </tr>
 <?php
 }
