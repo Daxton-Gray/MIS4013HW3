@@ -3,7 +3,7 @@
   <table class="table">
     <thead>
       <tr>
-        <th>ID</th>
+        <th>All-Star ID</th>
         <th>Team Name</th>
         <th>First Name</th>
         <th>Last Name</th>
