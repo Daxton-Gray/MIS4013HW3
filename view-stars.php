@@ -18,7 +18,7 @@ while ($star = $stars->fetch_assoc()) {
 ?>
        <tr>
          <td><?php echo $star['allstar_id']; ?></td>
-         <td><?php echo $star['team_id']; ?></td>
+         <td><?php echo $star['team_name']; ?></td>
          <td><?php echo $star['f_name']; ?></td>
          <td><?php echo $star['l_name']; ?></td>
          <td><?php echo $star['position']; ?></td>
