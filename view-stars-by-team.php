@@ -7,6 +7,7 @@
         <th>First Name</th>
         <th>Last Name</th>
         <th>League</th>
+        <th>City</th>
         <th>Team Name</th>
         <th>Position</th>
         <th>Seasons on Team</th>
@@ -22,6 +23,7 @@ while ($star = $stars->fetch_assoc()) {
          <td><?php echo $star['f_name']; ?></td>
          <td><?php echo $star['l_name']; ?></td>
          <td><?php echo $star['league_abbreviation']; ?></td>
+         <td><?php echo $star['city']; ?></td>
          <td><?php echo $star['team_name']; ?></td>
          <td><?php echo $star['position']; ?></td>
          <td><?php echo $star['season_with_team']; ?></td>
