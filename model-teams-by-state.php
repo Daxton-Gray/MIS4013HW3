@@ -1,5 +1,5 @@
 <?php
-  function selectTeamsByState($state) 
+  function selectTeamsByState($sid) 
   {
     try
       {
