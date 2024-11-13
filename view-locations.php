@@ -16,7 +16,7 @@ while ($location = $locations->fetch_assoc()) {
        <tr>
          <td><?php echo $location['location_id']; ?></td>
          <td><?php echo $location['city']; ?></td>
-         <td><a href="teams-by-state.php?id=<?php echo $location['state']; ?>"><?php echo $location['state']; ?></a></td>
+         <td><?php echo $location['city']; ?></td>
          <td><?php echo $location['country']; ?></td>
        </tr>
 <?php
