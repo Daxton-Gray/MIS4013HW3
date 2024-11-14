@@ -12,18 +12,14 @@
     </thead>
     <tbody>
 <?php
-while ($star = $stars->fetch_assoc()) {
+while ($team = $teams->fetch_assoc()) {
 ?>
        <tr>
-         <td><?php echo $star['allstar_id']; ?></td>
-         <td><?php echo $star['f_name']; ?></td>
-         <td><?php echo $star['l_name']; ?></td>
-         <td><?php echo $star['league_abbreviation']; ?></td>
-         <td><?php echo $star['city']; ?></td>
-         <td><?php echo $star['team_name']; ?></td>
-         <td><?php echo $star['position']; ?></td>
-         <td><?php echo $star['season_with_team']; ?></td>
-         <td><?php echo $star['allstar_seasons']; ?></td>
+         <td><?php echo $team['team_id']; ?></td>
+         <td><?php echo $team['city']; ?></td>
+         <td><?php echo $team['team_name']; ?></td>
+         <td><?php echo $team['year_established']; ?></td>
+         <td><a href="stars-by-team.php?id=<?php echo $team['team_id']; ?>">All-Stars</a></td>
        </tr>
 <?php
 }
