@@ -24,22 +24,22 @@
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="/">Home</a>
               </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="leagues.php">Leagues</a>
+              </li> 
               
               <li class="nav-item">
                 <a class="nav-link" href="teams.php">Teams</a>
               </li>
-              
-              <li class="nav-item">
-                <a class="nav-link" href="locations.php">Locations</a>
-              </li>
-              
-              <li class="nav-item">
-                <a class="nav-link" href="leagues.php">Leagues</a>
-              </li> 
 
               <li class="nav-item">
                 <a class="nav-link" href="stars.php">Stars</a>
               </li> 
+              
+              <li class="nav-item">
+                <a class="nav-link" href="locations.php">Locations</a>
+              </li>
 
             </ul>
           </div>
