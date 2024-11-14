@@ -5,13 +5,9 @@
       <tr>
         <th>Team ID</th>
         <th>City</th>
-        <th>Last Name</th>
-        <th>League</th>
-        <th>City</th>
-        <th>Team Name</th>
-        <th>Position</th>
-        <th>Seasons on Team</th>
-        <th>All-Star Seasons</th>
+        <th>Name</th>
+        <th>Year Established</th>
+        <th></th>
       </tr>
     </thead>
     <tbody>
