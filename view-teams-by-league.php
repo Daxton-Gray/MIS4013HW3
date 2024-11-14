@@ -21,7 +21,7 @@ while ($team = $teams->fetch_assoc()) {
          <td><?php echo $team['city']; ?></td>
          <td><?php echo $team['team_name']; ?></td>
          <td><?php echo $team['year_established']; ?></td>
-         <td><a href="stars-by-team.php?id=<?php echo $team['team_id']; ?>">All-Stars</a></td>
+         <td><a href="mvps-by-team.php?id=<?php echo $team['team_id']; ?>">MVPs</a></td>
        </tr>
 <?php
 }
