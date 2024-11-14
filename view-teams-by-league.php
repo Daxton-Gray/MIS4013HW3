@@ -4,6 +4,7 @@
     <thead>
       <tr>
         <th>Team ID</th>
+        <th>League</th>
         <th>City</th>
         <th>Name</th>
         <th>Year Established</th>
@@ -16,6 +17,7 @@ while ($team = $teams->fetch_assoc()) {
 ?>
        <tr>
          <td><?php echo $team['team_id']; ?></td>
+         <td><?php echo $team['league_abbreviation']; ?></td>
          <td><?php echo $team['city']; ?></td>
          <td><?php echo $team['team_name']; ?></td>
          <td><?php echo $team['year_established']; ?></td>
