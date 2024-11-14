@@ -34,7 +34,7 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="stars.php">Stars</a>
+                <a class="nav-link" href="mvps.php">MVPs</a>
               </li> 
               
               <li class="nav-item">
