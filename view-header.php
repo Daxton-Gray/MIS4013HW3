@@ -41,6 +41,10 @@
                 <a class="nav-link" href="locations.php">Locations</a>
               </li>
 
+              <li class="nav-item">
+                <a class="nav-link" href="teams-with-mvps.php">Teams with MVPs</a>
+              </li>
+
             </ul>
           </div>
         </div>
