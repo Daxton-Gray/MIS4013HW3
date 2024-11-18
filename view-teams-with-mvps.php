@@ -18,7 +18,7 @@ while ($team = $teams->fetch_assoc()) {
 ?>
       </ul>
       </p>
-      <p class="card-text"><small class="text-body-secondary">Joined <?php echo $mvp['league_abbreviation']; ?> <?php echo $team['year_established']; ?></small></p>
+      <p class="card-text"><small class="text-body-secondary">Joined <?php echo $team['league_abbreviation']; ?> <?php echo $team['year_established']; ?></small></p>
     </div>
   </div>
 
