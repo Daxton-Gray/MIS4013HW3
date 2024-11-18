@@ -12,7 +12,7 @@ while ($team = $teams->fetch_assoc()) {
   $mvps = selectMVPsByTeam($team['team_id']);
   while ($mvp = $mvps->fetch_assoc()) {
 ?>
-    <li class="list-group-item"><?php echo $mvp['f_name']; ?> <?php echo $mvp['l_name']; ?> - <?php echo $mvp['position']; ?> - <?php echo $mvp['season_with_team']; ?> Seasons - <?php echo $mvp['mvp_seasons']; ?> MVPs</li>
+    <li class="list-group-item"><?php echo $mvp['f_name']; ?> <?php echo $mvp['l_name']; ?> - <?php echo $mvp['position']; ?> - <?php echo $mvp['seasons_with_team']; ?> Seasons - <?php echo $mvp['mvp_seasons']; ?> MVPs</li>
 <?php
   }
 ?>
