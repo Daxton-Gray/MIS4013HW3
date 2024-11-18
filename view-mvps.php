@@ -22,7 +22,7 @@ while ($mvp = $mvps->fetch_assoc()) {
          <td><?php echo $mvp['f_name']; ?></td>
          <td><?php echo $mvp['l_name']; ?></td>
          <td><?php echo $mvp['position']; ?></td>
-         <td><?php echo $mvp['season_with_team']; ?></td>
+         <td><?php echo $mvp['seasons_with_team']; ?></td>
          <td><?php echo $mvp['mvp_seasons']; ?></td>
        </tr>
 <?php
