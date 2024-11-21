@@ -14,6 +14,13 @@ if (isset($_POST['actionType'])) {
         echo '<div class="alert alert-danger" role="alert">Error</div>';
       }
       break;
+    case "Delete":
+      if (deleteTeam($_POST['team_id'])) {
+        echo '<div class="alert alert-success" role="alert">Team Deleted</div>';
+      } else {
+        echo '<div class="alert alert-danger" role="alert">Error</div>';
+      }
+      break;
   }
 }
 
