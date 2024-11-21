@@ -32,6 +32,7 @@
             <label for="yearEst" class="form-label">Year Established</label>
             <input type="number" class="form-control" id="yearEst" name="yearEst">
           </div>
+            <input type="hidden" name="actionType" value="Add">
           <button type="submit" class="btn btn-primary">Save</button>
         </form>
       </div>
