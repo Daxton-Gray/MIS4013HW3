@@ -40,7 +40,7 @@
     try
       {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("UPDATE `hw3_schema`.`team` SET `location_id` = ?, `league_id` = ?, `team_name` = ?, `year_established` = ? WHERE `team_id` = ?");
+        $stmt = $conn->prepare("UPDATE `hw3_schema`.`team` SET location_id = ?, league_id = ?, team_name = ?, year_established = ? WHERE team_id = ?");
         $stmt->bind_param("iisii", $locid, $lgid, $tName, $yearEst, $tid);
         $success = $stmt->execute();
         $conn->close();
@@ -58,7 +58,7 @@
     try
       {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("DELETE FROM `hw3_schema`.`team` WHERE 'team_id' = ?");
+        $stmt = $conn->prepare("DELETE FROM `hw3_schema`.`team` WHERE team_id = ?");
         $stmt->bind_param("i", $tid);
         $success = $stmt->execute();
         $conn->close();
