@@ -17,12 +17,12 @@
       <div class="modal-body">
         <form method="post" action="">
           <div class="mb-3">
-            <label for="league_id" class="form-label">League ID</label>
-            <input type="number" class="form-control" id="league_id" name="league_id">
+            <label for="lgid" class="form-label">League ID</label>
+            <input type="number" class="form-control" id="lgid" name="lgid">
           </div>
           <div class="mb-3">
-            <label for="location_id" class="form-label">Location ID</label>
-            <input type="number" class="form-control" id="location_id" name="location_id">
+            <label for="locid" class="form-label">Location ID</label>
+            <input type="number" class="form-control" id="locid" name="locid">
           </div>
           <div class="mb-3">
             <label for="tName" class="form-label">Team Name</label>
