@@ -15,14 +15,14 @@ if (isset($_POST['actionType'])) {
       }
       break;
     case "Edit":
-      if (updateLocation($_POST['league_name'], $_POST['league_abbreviation'], $_POST['sport'], $_POST['lgid'])) {
+      if (updateLeague($_POST['league_name'], $_POST['league_abbreviation'], $_POST['sport'], $_POST['lgid'])) {
         echo '<div class="alert alert-success" role="alert">League Edited</div>';
       } else {
         echo '<div class="alert alert-danger" role="alert">Error</div>';
       }
       break;
     case "Delete":
-      if (deleteLocation($_POST['lgid'])) {
+      if (deleteLeague($_POST['lgid'])) {
         echo '<div class="alert alert-success" role="alert">League Deleted</div>';
       } else {
         echo '<div class="alert alert-danger" role="alert">Error</div>';
