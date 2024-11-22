@@ -18,11 +18,11 @@
         <form method="post" action="">
           <div class="mb-3">
             <label for="lgid<? echo $team['team_id']; ?>" class="form-label">League ID</label>
-            <input type="number" class="form-control" id="lgid<? echo $team['team_id']; ?>" name="lgid" value="<? echo $team['league_id']; ?>">
+            <input type="number" class="form-control" id="lgid<? echo $team['team_id']; ?>" name="lgid" value="<? echo $team['T.league_id']; ?>">
           </div>
           <div class="mb-3">
             <label for="locid<? echo $team['team_id']; ?>" class="form-label">Location ID</label>
-            <input type="number" class="form-control" id="locid<? echo $team['team_id']; ?>" name="locid" value="<? echo $team['location_id']; ?>">
+            <input type="number" class="form-control" id="locid<? echo $team['team_id']; ?>" name="locid" value="<? echo $team['T.location_id']; ?>">
           </div>
           <div class="mb-3">
             <label for="tName<? echo $team['team_id']; ?>" class="form-label">Team Name</label>
