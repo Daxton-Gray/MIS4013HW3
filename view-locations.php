@@ -2,7 +2,7 @@
   <div class="col">
     <h1>Locations</h1>
   </div>
-  <div>
+  <div class="col-auto">
 <?php
 include "view-locations-newform.php";
 ?>
