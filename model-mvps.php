@@ -41,7 +41,7 @@ function updateMVP($team_id, $f_name, $l_name, $position, $seasons_with_team, $m
       {
         $conn = get_db_connection();
         $stmt = $conn->prepare("UPDATE `hw3_schema`.`mvp` SET `team_id` = ?, `f_name` = ?, `l_name` = ?, `position` = ?, `seasons_with_team` = ?, `mvp_seasons` = ? WHERE `mvp_id` = ?");
-        $stmt->bind_param("sssi", $league_name, $league_abbreviation, $sport, $lgid);
+        $stmt->bind_param("isssiii", $team_id, $f_name, $l_name, $position, $seasons_with_team, $mvp_seasons, $mvpid);
         $success = $stmt->execute();
         $conn->close();
         return $success;
