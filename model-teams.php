@@ -4,7 +4,7 @@
     try
       {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT team_id, city, team_name, year_established FROM team T JOIN location L ON T.location_id=L.location_id");
+        $stmt = $conn->prepare("SELECT team_id, city, team_name, year_established, T.location_id, T.league_id FROM team T JOIN location L ON T.location_id=L.location_id");
         $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
