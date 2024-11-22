@@ -18,11 +18,11 @@
         <form method="post" action="">
           <div class="mb-3">
             <label for="city" class="form-label">City</label>
-            <input type="number" class="form-control" id="city" name="city">
+            <input type="text" class="form-control" id="city" name="city">
           </div>
           <div class="mb-3">
             <label for="state" class="form-label">State</label>
-            <input type="number" class="form-control" id="state" name="state">
+            <input type="text" class="form-control" id="state" name="state">
           </div>
           <div class="mb-3">
             <label for="country" class="form-label">Country</label>
