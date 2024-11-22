@@ -18,27 +18,27 @@
         <form method="post" action="">
           <div class="mb-3">
             <label for="team_id<? echo $mvp['mvp_id']; ?>" class="form-label">Team ID</label>
-            <input type="number" class="form-control" id="team_id<? echo $mvp['mvp_id']; ?>" name="team_id" value="<? echo $league['team_id']; ?>">
+            <input type="number" class="form-control" id="team_id<? echo $mvp['mvp_id']; ?>" name="team_id" value="<? echo $mvp['team_id']; ?>">
           </div>
           <div class="mb-3">
             <label for="f_name<? echo $mvp['mvp_id']; ?>" class="form-label">First Name</label>
-            <input type="text" class="form-control" id="f_name<? echo $mvp['mvp_id']; ?>" name="f_name" value="<? echo $league['f_name']; ?>">
+            <input type="text" class="form-control" id="f_name<? echo $mvp['mvp_id']; ?>" name="f_name" value="<? echo $mvp['f_name']; ?>">
           </div>
           <div class="mb-3">
             <label for="l_name<? echo $mvp['mvp_id']; ?>" class="form-label">Last Name</label>
-            <input type="text" class="form-control" id="l_name<? echo $mvp['mvp_id']; ?>" name="l_name" value="<? echo $league['l_name']; ?>">
+            <input type="text" class="form-control" id="l_name<? echo $mvp['mvp_id']; ?>" name="l_name" value="<? echo $mvp['l_name']; ?>">
           </div>
           <div class="mb-3">
             <label for="position<? echo $mvp['mvp_id']; ?>" class="form-label">Position</label>
-            <input type="text" class="form-control" id="position<? echo $mvp['mvp_id']; ?>" name="position" value="<? echo $league['position']; ?>">
+            <input type="text" class="form-control" id="position<? echo $mvp['mvp_id']; ?>" name="position" value="<? echo $mvp['position']; ?>">
           </div>
           <div class="mb-3">
             <label for="seasons_with_team<? echo $mvp['mvp_id']; ?>" class="form-label">Seasons With Team</label>
-            <input type="number" class="form-control" id="seasons_with_team<? echo $mvp['mvp_id']; ?>" name="seasons_with_team" value="<? echo $league['seasons_with_team']; ?>">
+            <input type="number" class="form-control" id="seasons_with_team<? echo $mvp['mvp_id']; ?>" name="seasons_with_team" value="<? echo $mvp['seasons_with_team']; ?>">
           </div>
           <div class="mb-3">
             <label for="mvp_seasons<? echo $mvp['mvp_id']; ?>" class="form-label">MVP Seasons</label>
-            <input type="number" class="form-control" id="mvp_seasons<? echo $mvp['mvp_id']; ?>" name="mvp_seasons" value="<? echo $league['mvp_seasons']; ?>">
+            <input type="number" class="form-control" id="mvp_seasons<? echo $mvp['mvp_id']; ?>" name="mvp_seasons" value="<? echo $mvp['mvp_seasons']; ?>">
           </div>
             <input type="hidden" name="mvpid" value="<? echo $mvp['mvp_id']; ?>">
             <input type="hidden" name="actionType" value="Edit">
