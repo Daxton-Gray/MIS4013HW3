@@ -5,3 +5,34 @@
     <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
   </svg>
 </button>
+
+<!-- Modal -->
+<div class="modal fade" id="editLocationModal<? echo $location['location_id']; ?>" tabindex="-1" aria-labelledby="editLocationModalLabel<? echo $location['location_id']; ?>" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="editLocationModalLabel<? echo $location['location_id']; ?>">Edit Location</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form method="post" action="">
+          <div class="mb-3">
+            <label for="city<? echo $location['location_id']; ?>" class="form-label">City</label>
+            <input type="text" class="form-control" id="city<? echo $location['location_id']; ?>" name="city" value="<? echo $location['city']; ?>">
+          </div>
+          <div class="mb-3">
+            <label for="state<? echo $location['location_id']; ?>" class="form-label">State</label>
+            <input type="text" class="form-control" id="state<? echo $location['location_id']; ?>" name="state" value="<? echo $location['state']; ?>">
+          </div>
+          <div class="mb-3">
+            <label for="country<? echo $location['location_id']; ?>" class="form-label">Country</label>
+            <input type="text" class="form-control" id="country<? echo $location['location_id']; ?>" name="country" value="<? echo $location['country']; ?>">
+          </div>
+            <input type="hidden" name="locid" value="<? echo $location['location_id']; ?>">
+            <input type="hidden" name="actionType" value="Edit">
+          <button type="submit" class="btn btn-primary">Save</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
