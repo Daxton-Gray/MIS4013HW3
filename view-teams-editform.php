@@ -17,16 +17,20 @@
       <div class="modal-body">
         <form method="post" action="">
           <div class="mb-3">
-            <label for="lgid<? echo $team['team_id']; ?>" class="form-label">League ID</label>
+            <label for="lgid<? echo $team['team_id']; ?>" class="form-label">League</label>
 <?php
 $leagueList = selectLeaguesForInput();
-$selectedLeague = $team['league_abbreviation'];
+$selectedLeague = $team['league_id'];
 include "view-league-input-list.php";
 ?>
           </div>
           <div class="mb-3">
             <label for="locid<? echo $team['team_id']; ?>" class="form-label">Location ID</label>
-            <input type="number" class="form-control" id="locid<? echo $team['team_id']; ?>" name="locid" value="<? echo $team['location_id']; ?>">
+<?php
+$locationList = selectLocationsForInput();
+$selectedLocation = $team['location_id'];
+include "view-location-input-list.php";
+?>
           </div>
           <div class="mb-3">
             <label for="tName<? echo $team['team_id']; ?>" class="form-label">Team Name</label>
