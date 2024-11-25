@@ -49,7 +49,7 @@ include "view-leagues-editform.php";
          </td>
          <td>
           <form method="post" action="teams-by-league.php">
-            <input type="hidden" name="lid" value="<?php echo $league['league_id']; ?>">
+            <input type="hidden" name="lgid" value="<?php echo $league['league_id']; ?>">
             <button type="submit" class="btn btn-primary">Teams</button>
           </form>       
          </td>
