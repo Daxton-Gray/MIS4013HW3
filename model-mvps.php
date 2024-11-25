@@ -22,7 +22,7 @@
     try
       {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT team_id, team_name, city FROM team T JOIN location L ON T.location_id=L.location_id ORDER BY city");
+        $stmt = $conn->prepare("SELECT team_id, team_name, city FROM team T JOIN location L ON T.location_id=L.location_id ORDER BY team_name");
         $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
