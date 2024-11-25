@@ -18,7 +18,10 @@
         <form method="post" action="">
           <div class="mb-3">
             <label for="team_id" class="form-label">Team ID</label>
-            <input type="number" class="form-control" id="team_id" name="team_id">
+<?php
+$teamList = selectTeamForInput();
+include "view-team-input-list.php";
+?>
           </div>
           <div class="mb-3">
             <label for="f_name" class="form-label">First Name</label>
