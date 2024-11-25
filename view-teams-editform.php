@@ -18,7 +18,11 @@
         <form method="post" action="">
           <div class="mb-3">
             <label for="lgid<? echo $team['team_id']; ?>" class="form-label">League ID</label>
-            <input type="number" class="form-control" id="lgid<? echo $team['team_id']; ?>" name="lgid" value="<? echo $team['league_id']; ?>">
+<?php
+$leagueList = selectLeaguesForInput();
+$selectedLeague = $team['league_abbreviation'];
+include "view-league-input-list.php";
+?>
           </div>
           <div class="mb-3">
             <label for="locid<? echo $team['team_id']; ?>" class="form-label">Location ID</label>
