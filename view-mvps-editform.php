@@ -17,8 +17,11 @@
       <div class="modal-body">
         <form method="post" action="">
           <div class="mb-3">
-            <label for="team_id<? echo $mvp['mvp_id']; ?>" class="form-label">Team ID</label>
-            <input type="number" class="form-control" id="team_id<? echo $mvp['mvp_id']; ?>" name="team_id" value="<? echo $mvp['team_id']; ?>">
+            <label for="team_id<? echo $mvp['mvp_id']; ?>" class="form-label">Team</label>
+<?php
+$teamList = selectTeamsForInput();
+include "view-team-input-list.php";
+?>
           </div>
           <div class="mb-3">
             <label for="f_name<? echo $mvp['mvp_id']; ?>" class="form-label">First Name</label>
