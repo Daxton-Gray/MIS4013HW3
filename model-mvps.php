@@ -17,6 +17,24 @@
       }
   }
 
+  function selectTeamsForInput() 
+  {
+    try
+      {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("SELECT team_id, team_name FROM team ORDER BY team_name");
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $conn->close();
+        return $result;
+      } 
+    catch (Exception $e) 
+      {
+        $conn->close();
+        throw $e;
+      }
+  }
+
 function insertMVP($team_id, $f_name, $l_name, $position, $seasons_with_team, $mvp_seasons) 
   {
     try
