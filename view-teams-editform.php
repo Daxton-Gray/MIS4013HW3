@@ -25,7 +25,7 @@ include "view-league-input-list.php";
 ?>
           </div>
           <div class="mb-3">
-            <label for="locid<? echo $team['team_id']; ?>" class="form-label">Location ID</label>
+            <label for="locid<? echo $team['team_id']; ?>" class="form-label">Location</label>
 <?php
 $locationList = selectLocationsForInput();
 $selectedLocation = $team['location_id'];
