@@ -6,7 +6,7 @@ while ($locationItem = $locationList->fetch_assoc()) {
     $selText = " selected";
   }
 ?>
-  <option value="<?php echo $locationItem['location_id']; ?>"<?=$selText?>><?php echo $locationItem['city']; ?> <?php echo $locationItem['state']; ?></option>
+  <option value="<?php echo $locationItem['location_id']; ?>"<?=$selText?>><?php echo $locationItem['city']; ?>, <?php echo $locationItem['state']; ?></option>
 <?php
 }
 ?>
