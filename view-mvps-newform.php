@@ -17,7 +17,7 @@
       <div class="modal-body">
         <form method="post" action="">
           <div class="mb-3">
-            <label for="team_id" class="form-label">Team ID</label>
+            <label for="team_id" class="form-label">Team</label>
 <?php
 $teamList = selectTeamsForInput();
 include "view-team-input-list.php";
