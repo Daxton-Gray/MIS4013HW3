@@ -20,7 +20,7 @@
             <label for="lgid" class="form-label">League</label>
 <?php
 $leagueList = selectLeaguesForInputByLeague();
-$selectedLeague = 0;
+$selectedLeague = $team['league_id'];
 include "view-league-input-list.php";
 ?>
           </div>
