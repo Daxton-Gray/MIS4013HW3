@@ -22,7 +22,7 @@ while ($team = $teams->fetch_assoc()) {
   while ($mvp = $mvps->fetch_assoc()) {
 ?>
     <li class="list-group-item">
-      <?php echo $mvp['f_name']; ?> <?php echo $mvp['l_name']; ?><br/><?php echo $mvp['position']; ?><br/><?php echo $mvp['seasons_with_team']; ?> Seasons - <?php echo $mvp['mvp_seasons']; ?> MVPs<br/><?php include "view-mvps-editform.php"; ?><form method="post" action="">
+      <?php echo $mvp['f_name']; ?> <?php echo $mvp['l_name']; ?><br/><?php echo $mvp['position']; ?><br/><?php echo $mvp['seasons_with_team']; ?> Seasons - <?php echo $mvp['mvp_seasons']; ?> MVPs<br/><form method="post" action="">
              <input type="hidden" name="mvpid" value="<?php echo $mvp['mvp_id']; ?>">
              <input type="hidden" name="actionType" value="Delete">
              <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure?');">
@@ -31,7 +31,7 @@ while ($team = $teams->fetch_assoc()) {
                 <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
               </svg>
              </button>
-          </form>
+          </form><?php include "view-mvps-editform.php"; ?>
     </li>
 <?php
   }
