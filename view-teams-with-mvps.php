@@ -22,8 +22,7 @@ while ($team = $teams->fetch_assoc()) {
   while ($mvp = $mvps->fetch_assoc()) {
 ?>
     <li class="list-group-item">
-      <?php echo $mvp['f_name']; ?> <?php echo $mvp['l_name']; ?><br/><?php echo $mvp['position']; ?><br/><?php echo $mvp['seasons_with_team']; ?> Seasons - <?php echo $mvp['mvp_seasons']; ?> MVP Awards<br/><?php include "view-mvps-editform.php"; ?>
-          <form method="post" action="">
+      <?php echo $mvp['f_name']; ?> <?php echo $mvp['l_name']; ?><br/><?php echo $mvp['position']; ?><br/><?php echo $mvp['seasons_with_team']; ?> Seasons - <?php echo $mvp['mvp_seasons']; ?> MVP Awards<br/><?php include "view-mvps-editform.php"; ?><form method="post" action="">
              <input type="hidden" name="mvpid" value="<?php echo $mvp['mvp_id']; ?>">
              <input type="hidden" name="actionType" value="Delete">
              <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure?');">
