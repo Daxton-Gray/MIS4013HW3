@@ -35,4 +35,77 @@ function selectMVPsByTeam($tid)
         throw $e;
       }
   }
+
+function selectTeamsForInput() 
+  {
+    try
+      {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("SELECT team_id, team_name, city FROM team T JOIN location L ON T.location_id=L.location_id ORDER BY team_name");
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $conn->close();
+        return $result;
+      } 
+    catch (Exception $e) 
+      {
+        $conn->close();
+        throw $e;
+      }
+  }
+
+function insertMVP($team_id, $f_name, $l_name, $position, $seasons_with_team, $mvp_seasons) 
+  {
+    try
+      {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("INSERT INTO `hw3_schema`.`mvp` (`mvp_id`, `team_id`, `f_name`, `l_name`, `position`, `seasons_with_team`, `mvp_seasons`) VALUES (NULL, ?, ?, ?, ?, ?, ?)");
+        $stmt->bind_param("isssii", $team_id, $f_name, $l_name, $position, $seasons_with_team, $mvp_seasons);
+        $success = $stmt->execute();
+        $conn->close();
+        return $success;
+      } 
+    catch (Exception $e) 
+      {
+        $conn->close();
+        throw $e;
+      }
+  }
+
+function updateMVP($team_id, $f_name, $l_name, $position, $seasons_with_team, $mvp_seasons, $mvpid) 
+  {
+    try
+      {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("UPDATE `hw3_schema`.`mvp` SET `team_id` = ?, `f_name` = ?, `l_name` = ?, `position` = ?, `seasons_with_team` = ?, `mvp_seasons` = ? WHERE `mvp_id` = ?");
+        $stmt->bind_param("isssiii", $team_id, $f_name, $l_name, $position, $seasons_with_team, $mvp_seasons, $mvpid);
+        $success = $stmt->execute();
+        $conn->close();
+        return $success;
+      } 
+    catch (Exception $e) 
+      {
+        $conn->close();
+        throw $e;
+      }
+  }
+
+function deleteMVP($mvpid) 
+  {
+    try
+      {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("DELETE FROM `hw3_schema`.`mvp` WHERE mvp_id = ?");
+        $stmt->bind_param("i", $mvpid);
+        $success = $stmt->execute();
+        $conn->close();
+        return $success;
+      } 
+    catch (Exception $e) 
+      {
+        $conn->close();
+        throw $e;
+      }
+  }
+
 ?>
