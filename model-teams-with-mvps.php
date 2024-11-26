@@ -41,7 +41,7 @@ function selectTeamsForInput()
     try
       {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT team_id, team_name, city, mvp_id FROM team T JOIN location L ON T.location_id=L.location_id JOIN mvp M ON T.team_id=M.team_id ORDER BY team_name");
+        $stmt = $conn->prepare("SELECT M.team_id, team_name, city, mvp_id FROM team T JOIN location L ON T.location_id=L.location_id JOIN mvp M ON T.team_id=M.team_id ORDER BY team_name");
         $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
