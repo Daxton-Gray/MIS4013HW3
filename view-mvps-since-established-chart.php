@@ -12,16 +12,16 @@
   const ctx = document.getElementById('myChart');
 
   new Chart(ctx, {
-    type: 'doughnut',
+    type: 'scatter',
     data: {
     datasets: [{
-        data: [
+        data: [{
 <?php
 while ($team = $teams->fetch_assoc()) {
-  echo $team['total_mvps'] . ", ";
+ echo "{ x: " . $team['year_established'] . ", y: " . $team['total_mvps'] . " },";
 }
-?>          
-        ]
+?>,
+        }]
     }],
 
     // These labels appear in the legend and in the tooltips when hovering different arcs
