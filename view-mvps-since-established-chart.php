@@ -21,6 +21,15 @@
           }
           ?>
         ],
+        labels: [
+<?php
+$teams = selectTeams();
+while ($team = $teams->fetch_assoc()) {
+  echo "'" . $team['team_name'] . "', ";
+}
+?>  
+    ],
+
         backgroundColor: 'rgba(75, 192, 192, 0.6)',
         borderColor: 'rgba(75, 192, 192, 1)',
         borderWidth: 1,
