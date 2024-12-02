@@ -57,6 +57,10 @@
                 <a class="nav-link" href="team-seasons-chart.php">Seasons per MVP Chart</a>
               </li>
 
+              <li class="nav-item">
+                <a class="nav-link" href="mvps-since-established-chart.php">MVPS since Established Chart</a>
+              </li>
+
             </ul>
           </div>
         </div>
