@@ -45,6 +45,10 @@
                 <a class="nav-link" href="teams-with-mvps.php">Teams with MVPs</a>
               </li>
 
+              <li class="nav-item">
+                <a class="nav-link" href="teams-chart.php">MVPs Per Team</a>
+              </li>
+
             </ul>
           </div>
         </div>
