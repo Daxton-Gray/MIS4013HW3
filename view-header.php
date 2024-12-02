@@ -53,6 +53,10 @@
                 <a class="nav-link" href="locations-chart.php">Teams Per State Chart</a>
               </li>
 
+              <li class="nav-item">
+                <a class="nav-link" href="teams-seasons-chart.php">Seasons per MVP Chart</a>
+              </li>
+
             </ul>
           </div>
         </div>
