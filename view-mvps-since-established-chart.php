@@ -13,7 +13,6 @@
     type: 'scatter',
     data: {
       datasets: [{
-        label: 'Team MVPs vs. Year Established',
         data: [
           <?php
           // Fetch team data and output it as JavaScript-compatible objects
