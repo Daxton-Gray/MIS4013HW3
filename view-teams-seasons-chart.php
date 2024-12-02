@@ -1,4 +1,4 @@
-<h1>Total MVPs Per Team</h1>
+<h1>Average Seasons per MVP by Team</h1>
 
 <div>
   <canvas id="myChart"></canvas>
