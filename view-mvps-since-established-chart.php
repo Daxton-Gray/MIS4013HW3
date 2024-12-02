@@ -22,7 +22,7 @@
           }
           ?>
         ],
-        pointRadius: 13,
+        pointRadius: 8,
       }]
     },
     options: {
