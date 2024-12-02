@@ -30,8 +30,7 @@ while ($team = $teams->fetch_assoc()) {
   echo $team['total_mvps'] . ", ";
 }
 ?>           
-        }        
-        ]
+        }],
     }],
 
     // These labels appear in the legend and in the tooltips when hovering different arcs
