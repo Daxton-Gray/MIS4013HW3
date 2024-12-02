@@ -49,6 +49,10 @@
                 <a class="nav-link" href="teams-chart.php">MVPs Per Team Chart</a>
               </li>
 
+              <li class="nav-item">
+                <a class="nav-link" href="locations-chart.php">Teams Per State Chart</a>
+              </li>
+
             </ul>
           </div>
         </div>
